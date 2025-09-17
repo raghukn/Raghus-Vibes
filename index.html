@@ -1,0 +1,31 @@
+<script type="importmap">
+  {
+    "imports": {
+      "@google/genai": "https://esm.sh/@google/genai@^0.7.0"
+    }
+  }
+</script>
+<div id="root">
+  <div id="presets-container">
+    <div id="directions-container">
+      <input type="text" id="origin" placeholder="Origin" aria-label="Starting location">
+      <input type="text" id="destination" placeholder="Destination" aria-label="Destination location">
+      <button id="get-directions" aria-label="Get directions">→</button>
+    </div>
+    <span id="take-me-somewhere">Take me somewhere...</span>
+    <div id="presets"></div>
+  </div>
+  <div id="map">
+    <iframe
+      id="embed-map"
+      width="600"
+      height="450"
+      style="border: 0"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+  <div id="caption" class="hidden"></div>
+  <div id="directions-result" class="hidden"></div>
+</div>
